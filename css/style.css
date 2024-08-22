@@ -1,0 +1,297 @@
+html {
+    --color-fondo:#E5E5E5;
+    --color-texto:#0A3871;
+    --color-texto-secundario:#000000;
+    --color-boton:  #4b8ec8;
+    --color-boton-hover:#D8DFE8;
+    --color-terciaria:#000000;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-fondo);
+    min-height: 100vh;
+    
+
+
+}
+
+header {
+    height: 18vh;
+    width: 90%;
+    font-size: 15px;   
+    color: var(--color-texto);
+    line-height: 100px;
+    position:left;
+    margin:0px auto;
+
+  
+}
+
+.logo{
+
+margin-top:20px;
+right:0;
+max-width: 5%;
+
+}
+
+#imagen {
+    width: 100%;
+    height: 300px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: space-between;
+    padding: 5px;
+    gap:50px;
+    flex-wrap: wrap;
+  
+
+}
+
+textarea {
+
+
+    resize: none;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;   
+    color: var(--color-texto);
+    
+ 
+}
+   
+#entrada-contenedor textarea {
+    
+    height: 80%;
+    width: 90%;
+    margin:0px auto;
+
+}
+
+#salida-contenedor textarea {
+    
+    height: 80%;
+    width: 99%;
+    margin:0px auto;
+    background-color: transparent;
+}
+
+
+#entrada-contenedor {
+    float: left;
+    height: 60vh;
+    width: 450px;
+
+}
+
+#salida-contenedor {
+
+    border: 1px solid #888; 
+    margin-right:5%;
+    height: 60vh;
+    width: 300px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    background-image: url("../img/logo.2.png");
+    background-position:bottom right;
+    background-repeat: no-repeat;
+    background-size:60%;
+  
+}
+    
+
+#texto-salida {
+
+    background-color: #ffffff;
+    position:relative;
+    
+
+}
+
+    
+button {
+    padding: 8px 18px;
+    margin: 8px 4px;
+    background-color: var(--color-boton);
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: var(--color-boton-hover);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+#btnCopiar {
+    display: none;
+}
+
+
+
+footer {
+
+   
+    font-family: Arial, Helvetica, sans-serif;    
+    color: var(--color-texto);
+    font-size: 18px;
+    text-align: center; 
+    height: 15vh;
+    width: 800px;
+    margin-top: 2%;
+   
+}
+
+.presentacion__enlaces {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    padding: 5px;
+    gap: 5px; 
+    flex-wrap: wrap;
+    position: both;
+
+
+}
+.presentacion__enlaces__link {
+  
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap:5px; 
+    padding: 1px 1px;   
+    font-size: 1.1rem;
+    font-weight:100px;
+    max-width: 15%;
+    text-decoration: none;
+    color: var(--color-secundaria);
+    font-family: var(--fuente-montserrat);
+    white-space: nowrap;
+
+   
+
+}
+
+.imagenes_link{
+    max-width: 20%;
+   
+}
+
+@media (max-width: 1043px) {
+    button {
+    font-size: 11px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 4%;
+    }
+
+    body {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px;
+    }
+    footer {
+        width: 90%;
+      
+    }
+    #entrada-contenedor,
+    #salida-contenedor {
+        width: 100%;
+    }
+
+    #entrada-contenedor textarea,
+    #salida-contenedor textarea {
+        width: 100%;
+        height: 200px;
+    }
+
+ 
+
+    .presentacion_encabezado{
+        font-size: 14px;
+
+    }
+    .presentacion__enlaces__link {
+          
+        font-size: 0.5rem;
+        align-items: center;
+      
+    }
+    .imagenes_link{
+        max-width: 30%;
+}
+}
+
+@media (max-width: 480px) {
+    * {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 4px 10px;
+        margin: 5px;
+        font-size: 10px;
+    }
+
+    #entrada-contenedor textarea,
+    #salida-contenedor textarea {
+        width: 100%;
+        height: 150px;
+    }
+
+    footer {
+        width: 90%;
+        
+        
+   
+    }
+    
+    .presentacion_encabezado{
+        font-size: 14px;
+
+    }
+    .presentacion__enlaces__link {
+      
+        margin: auto;
+        font-size:5px;
+        align-items: center;
+        gap:4px; 
+        padding: 1px 1px;  
+     
+        
+      
+    }
+    .imagenes_link{
+        max-width: 50%;
+}
+}
