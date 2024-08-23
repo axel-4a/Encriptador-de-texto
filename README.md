@@ -1,5 +1,8 @@
 Encriptador de texto
 
+encriptador desplegado:
+https://encriptador-de-texto-cyan.vercel.app/
+
 <img width="957" alt="web-copia-1" src="https://github.com/user-attachments/assets/e98e53de-f2f2-4dc1-98e5-00781917560b">
 
 
